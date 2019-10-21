@@ -31,7 +31,7 @@ $conn = open_db_conn();
                 		$userid = $result['userid'];
                 		
                 		$message = $firstname." ".$lastname." with emailid - ".$email;
-                        mail("veducool28@gmail.com","FB/Google Login Notification",$message);
+                        
                         
                         setcookie("login", $firstname, time() + (10*60*60), "/");
                         setcookie("loginid",$userid,time() + (10*60*60),"/");
